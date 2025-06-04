@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+
+export function SideImage() {
+  return (
+    <div className="side-image">
+      <div className='side-image-text'>
+        <p>заповніть вхід до <br></br> 
+        облікового запису</p>
+      </div>
+      <img src="/1.jpg" className="side-image" alt="logo" />
+    </div>
+  );
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <SideImage />
+      </>
     </div>
   );
 }
