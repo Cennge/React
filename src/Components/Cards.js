@@ -1,5 +1,4 @@
 import React from "react";
-import { Card } from './Cards';
 
 export function Card(props) {
     return (
@@ -16,20 +15,20 @@ export function Card(props) {
 }
 
 
-export class Card extends React.Component {
-    render() { 
-        const { newSevenWonders } = this.props; 
+// export class CardClass extends React.Component {
+//     render() { 
+//         const { newSevenWonders } = this.props; 
 
-        return (
-            <div className="card-design">
-                <img
-                    src={newSevenWonders.imgUrl}
-                    alt={'photo of ' + newSevenWonders.name}
-                    className="card-image"
-                />
-                <h3>{newSevenWonders.name}</h3>
-                <p>{newSevenWonders.description}</p>
-            </div>
-        );
-    }
-}
+//         return (
+//             <div className="card-design">
+//                 <img
+//                     src={newSevenWonders.imgUrl}
+//                     alt={'photo of ' + newSevenWonders.name}
+//                     className="card-image"
+//                 />
+//                 <h3>{newSevenWonders.name}</h3>
+//                 <p>{newSevenWonders.description}</p>
+//             </div>
+//         );
+//     }
+// }
